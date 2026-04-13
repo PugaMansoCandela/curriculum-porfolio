@@ -1,0 +1,42 @@
+/* CSS DOCUMENT */
+@charset "UTF-8";
+/* configuraciones generales*/
+@font-face {
+    font-family: "Alegreya Reg";
+    src: url(fuentes/Alegreya-VariableFont_wght.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Alegreya Italic";
+    src: url(fuentes/Alegreya-Italic-VariableFont_wght.ttf) format(truetype);
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Lexend";
+    src: url(fuentes/Lexend-VariableFont_wght.ttf) format(truetype);
+    font-weight: bold;
+    font-style: normal;
+}
+
+*{
+    font-family: 'Alegreya Reg', serif;
+    background-color:bisque
+}
+/* acá empiezan las aplicaciones*/
+header {background-color: rgb(76, 121, 68);}
+h1 {
+    font-family: 'Lexend', sans-serif;
+    color: rgb(76, 121, 68);
+    font-size: 3rem;
+    text-align: center;
+}
+h2 {
+    font-size: 2rem;
+}
+h2, h3 {
+    font-family: 'Alegreya Italic', serif;
+}
