@@ -1,5 +1,6 @@
 /* CSS DOCUMENT */
 @charset "UTF-8";
+
 /* configuraciones generales*/
 @font-face {
     font-family: "Alegreya Reg";
@@ -22,21 +23,58 @@
     font-style: normal;
 }
 
-*{
+* {
     font-family: 'Alegreya Reg', serif;
-    background-color:bisque
+    margin: 0;
 }
+
+body {
+    background-color: rgb(220, 191, 168)
+}
+
 /* acá empiezan las aplicaciones*/
-header {background-color: rgb(76, 121, 68);}
+header {
+    background-color: rgb(80, 108, 97);
+}
+
 h1 {
     font-family: 'Lexend', sans-serif;
-    color: rgb(76, 121, 68);
+    color: rgb(80, 108, 97);
     font-size: 3rem;
     text-align: center;
 }
+
 h2 {
     font-size: 2rem;
+    text-align: center;
 }
-h2, h3 {
+
+h2,
+h3 {
     font-family: 'Alegreya Italic', serif;
+    text-wrap-style: balance;
+    text-align: center;
+}
+
+#hero {
+    background-image: url(img/cande_puga_manso.png) 
+/*por alguna razón que esta por fuera de mi comprensión esta parte no me la lee visual, pero son cosas que establecí desde el inspector y al pasarlas a visual hace que ni me lea la imagen*/
+   background-position: center;
+    background-size: cover; 
+    height: 70vh;
+    padding: 20px;
+}
+
+p {
+    text-wrap-style: balance;
+    text-align: center;
+}
+
+flex-container {
+    background-image: url(img/logo_cande_puga_manso.png)
+}
+
+flex-item {
+    background-color: rgb(80, 108, 97);
+    margin: 3px color;
 }
