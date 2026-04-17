@@ -59,10 +59,10 @@ h3 {
 #hero {
     background-image: url(img/cande_puga_manso.png) 
 /*por alguna razón que esta por fuera de mi comprensión esta parte no me la lee visual, pero son cosas que establecí desde el inspector y al pasarlas a visual hace que ni me lea la imagen*/
+  /* background-size: cover; 
    background-position: center;
-    background-size: cover; 
     height: 70vh;
-    padding: 20px;
+    padding: 20px;*/
 }
 
 p {
