@@ -3,66 +3,98 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>TP1 Candela Puga Manso</title>
+    <title>Candela Puga Manso</title>
     <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" href="img/logo_cande_puga_manso.png">
 </head>
 
 <body>
     <header>
-        <img src="img/logo_cande_puga_manso_trama.png" alt="Logo de Candela Puga Manso" width="50" height="50" />
+        <div class="logo">
+            <img src="img/logo_cande_puga_manso_trama.png" alt="Logo de Candela Puga Manso" />
+            <span>CANDE PUGA MANSO</span>
+        </div>
         <nav>
-            <a href="#">Inicio</a>
-            <a href="#">Trabajos</a>
-            <a href="#">Buscar</a>
+            <a href="#">INICIO</a>
+            <a href="#">TRABAJOS</a>
+            <a href="#">BUSCAR</a>
         </nav>
     </header>
     <main>
-    <!--Acá lo que es la presentación principal.-->
+        <!--Acá lo que es la presentación principal.-->
         <section id="hero">
             <h1>CANDE PUGA MANSO</h1>
             <h2> Diseñadora de Comunicación Visual</h2>
         </section>
-        <article>
-            <h2>¿Quién soy yo y a qué me dedico?</h2>
-            <p>Soy una Diseñadora en Comunicación Visual con enfoque en la construcción de identidades visuales,
-                branding y diseño editorial. Interesada en el diseño tipográfico, con capacidad para desarrollar
-                conceptos sólidos, construir universos de marca coherentes y producir piezas gráficas.
-                Me defino como una profesional en constante aprendizaje y crecimiento, comprometida con la evolución
-                continua de mi práctica y mirada proyectual.</p>
+        <article id="sobre-mi">
+            <div class="titulo">
+                <h2>¿Quién soy yo y a qué me dedico?</h2>
+            </div>
+            <div class="texto">
+                <p>Soy una Diseñadora en Comunicación Visual con enfoque en la construcción de identidades visuales,
+                    branding y diseño editorial. Interesada en el diseño tipográfico, con capacidad para desarrollar
+                    conceptos sólidos, construir universos de marca coherentes y producir piezas gráficas.
+                    Me defino como una profesional en constante aprendizaje y crecimiento, comprometida con la evolución
+                    continua de mi práctica y mirada proyectual.</p>
+            </div>
         </article>
-<!-- Acá la sección de info del curriculum, lo aburrido / tecnico-->
-        <section class= "flex-container">
-            <article class="flex-item Educación">
-                <h2>Educación</h2>
-                <h3>Deutsche Schule Temperley</h3>
-                <p>Bachillerato Internacional con orientación en ciencias naturales | Julio 2011 - Noviembre 2020
-                </p>
+        <!-- Acá la sección de info del curriculum, lo aburrido / tecnico-->
+        <section class="flex-container">
+            <article class="flex-item educacion">
+                <h2>- Educación -</h2>
                 <h3>Universidad de Buenos Aires, FADU</h3>
                 <p>Ciclo Básico Común (CBC) | Marzo 2021 - Noviembre 2021</p>
                 <h3>Universidad Nacional de Lanús</h3>
                 <p>Licenciatura en Diseño de Comunicación Visual | Febrero 2022 - Actualidad</p>
             </article>
-            <article class="flex-item Idiomas">
-                <h2>Idiomas</h2>
+            <article class="flex-item idiomas">
+                <h2>- Idiomas -</h2>
                 <h3>Inglés</h3>
                 <p>Deutsche Schule Temperley | Julio 2011 - Noviembre 2020</p>
                 <h3>Alemán</h3>
                 <p>Deutsche Schule Temperley | Julio 2011 - Noviembre 2020</p>
             </article>
-            <article class="flex-item Experiencia">
-                <h2>Experiencia</h2>
+            <article class="flex-item experiencia">
+                <h2>- Experiencia -</h2>
                 <h3>Universidad Nacional de Lanús</h3>
                 <p>Ayudante de cátedra en Taller de Diseño 1 y Taller de Diseño 3 | Marzo 2025 - Actualidad</p>
             </article>
         </section>
         <!--Acá algunas fotos / mockups de trabajitos piolas :)-->
         <section>
-            <h2>Proyectos destacados</h2>
-            <h3>MARyDAR - Editorial</h3>
-            <h3>SOS - Editorial</h3>
-            <h3>Museo Wonaga - Identidad</h3>
-            <h3>Post Mortem - Discográfico</h3>
-            <h3>URGE! - Afiches Sociales</h3>
+            <article>
+                <div class="proyectos">
+                    <h2>PROYECTOS DESTACADOS</h2>
+                </div>
+            </article>
+            <article class="mosaico">
+                <div class="columna">
+                    <figure>
+                        <img src="img/wonaga_type.jpg" alt="Wonaga">
+                        <figcaption>Wonaga Type - Tipografía</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/museo_wonaga.jpg" alt="Wonaga type">
+                        <figcaption>Museo Wonaga - Identidad</figcaption>
+                    </figure>
+                </div>
+                 <div class="columna">
+                    <figure>
+                        <img src="img/suseok_soju.JPG" alt="suseok">
+                        <figcaption>Suseok Soju - Producto</figcaption>
+                    </figure>
+                </div>
+                <div class="columna">
+                    <figure>
+                        <img src="img/sos_mar_argentino.png" alt="SOS">
+                        <figcaption>SOS-Mar Argentino - Editorial</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/urge!_afiche.jpg" alt="Urge!">
+                        <figcaption>Urge! - Afiches Sociales</figcaption>
+                    </figure>
+                </div>
+            </article>
         </section>
     </main>
     <footer>
