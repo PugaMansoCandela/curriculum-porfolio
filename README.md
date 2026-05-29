@@ -6,6 +6,7 @@ Portfolio personal hecho con HTML y CSS.
 Estructura de archivos
 proyecto/
 - index.html
+- inicio.html
 - estilos.css
 - img/
 - fuentes/
