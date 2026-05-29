@@ -26,14 +26,51 @@
 * {
     font-family: 'Alegreya Reg', serif;
     margin: 0 auto;
-    max-width: 1920px
+    max-width: 1920px;
 }
 
 body {
-    background-color: rgb(220, 191, 168)
+    background-color: rgb(220, 191, 168);
 }
 
-/* acá empiezan las aplicaciones*/
+/* Esto seía solo para el index */
+body.page-index {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: rgb(80, 108, 97);
+}
+
+.splash {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+.splash img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.splash p {
+    font-family: 'Lexend', sans-serif;
+    color: rgb(220, 191, 168);
+    letter-spacing: 0.15em;
+    font-size: 0.85rem;
+}
+
+.splash__divider {
+    width: 200px;
+    height: 1px;
+    background-color: rgb(220, 191, 168);
+    opacity: 0.4;
+}
+
 header {
     display: flex;
     align-items: center;
@@ -73,6 +110,7 @@ nav a:hover {
     color: rgb(142, 188, 169);
 }
 
+/* ---- TIPOGRAFÍA ---- */
 h1 {
     font-family: 'Lexend', sans-serif;
     color: rgb(54, 73, 65);
@@ -97,9 +135,7 @@ p {
     text-align: center;
 }
 
-/*Momento estilisticos*/
 #hero {
-
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -114,10 +150,9 @@ p {
 
 #hero h2 {
     color: rgb(54, 73, 65);
-
 }
 
-
+/* ---- SOBRE MÍ ---- */
 #sobre-mi {
     display: flex;
     gap: 40px;
@@ -141,16 +176,15 @@ p {
     hyphens: auto;
 }
 
+/* ---- CURRICULUM ---- */
 .flex-container {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
-    align-items: flex-start;
-    margin: 12px 20PX;
-    flex: 1;
-    gap: 16px;
     align-items: stretch;
+    margin: 12px 20px;
+    gap: 16px;
 }
 
 .flex-item {
@@ -167,14 +201,16 @@ p {
     line-height: 2;
     margin-bottom: 2;
 }
-.proyectos h2{
- font-family: 'Lexend', sans-serif;
+
+/* ---- PROYECTOS ---- */
+.proyectos h2 {
+    font-family: 'Lexend', sans-serif;
     color: rgb(54, 73, 65);
     font-size: 1.5rem;
     text-align: center;
-    padding: 40px ;
+    padding: 40px;
 }
-/*proyectos*/
+
 article.mosaico {
     display: flex;
     gap: 16px;
@@ -204,17 +240,17 @@ figcaption {
     text-align: center;
 }
 
-/*footer/ zona de info de contacto*/
+/* ---- FOOTER ---- */
 footer {
     display: flex;
     justify-content: space-between;
-    align-items: right;
+    align-items: center;
     padding: 24px 80px;
     background-color: rgb(80, 108, 97);
 }
 
 footer p {
-    color:rgb(220, 191, 168);
+    color: rgb(220, 191, 168);
     font-size: 14px;
 }
 
