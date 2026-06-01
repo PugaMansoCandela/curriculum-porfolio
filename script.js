@@ -1,3 +1,22 @@
+// ---- MENÚ HAMBURGUESA ----
+const hamburguesa = document.getElementById('hamburguesa');
+const navMenu = document.getElementById('nav-menu');
+
+if (hamburguesa && navMenu) {
+    hamburguesa.addEventListener('click', () => {
+        hamburguesa.classList.toggle('abierto');
+        navMenu.classList.toggle('abierto');
+    });
+
+    // Cerrar al hacer click en un link
+    navMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            hamburguesa.classList.remove('abierto');
+            navMenu.classList.remove('abierto');
+        });
+    });
+}
+
 // ---- CARRUSEL (inicio.html) ----
 const slides = document.querySelectorAll('.slide');
 if (slides.length > 0) {
