@@ -8,7 +8,7 @@ Portfolio Web - Candela Puga Manso
 
 ## Estructura de archivos:
 ```
-portfolio/
+mi_primer_sitio/
 ├── index.html          → Página de entrada (portada)
 ├── inicio.html         → Página principal con carrusel
 ├── curriculum.html     → Sobre mí, educación, experiencia e idiomas
@@ -49,6 +49,7 @@ Hero con imagen de fondo. Formulario en dos columnas: datos personales (nombre, 
 ---
 
 ## Colores:
+
 Fondo: rgb(220, 191, 168)
 Verde: rgb(80, 108, 97)
 Verde oscuro: rgb(54, 73, 65)
@@ -58,7 +59,12 @@ Verde oscuro: rgb(54, 73, 65)
 ## JavaScript (script.js)
 
 El archivo maneja dos funcionalidades:
-
 - Carrusel (inicio.html): cambia entre imágenes con opacidad, controlado por flechas y con autoplay.
 - Lightbox (proyectos.html): abre la imagen clickeada en pantalla completa sobre fondo oscuro.
+
+---
+## Figma:
+
+Link al figma:
+https://www.figma.com/design/XqOwqCC6yhReS86jEvl46O/Portfolio---Cande-Puga-Manso?node-id=5-41&t=Yeau2TsYoaM0AQUU-1
 
