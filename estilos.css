@@ -323,7 +323,7 @@ footer {
 #sobre-mi-curriculum h2 {
     font-family: 'Lexend', sans-serif;
     color: rgb(220, 191, 168);
-    font-size: 3rem;
+    font-size: 2.2rem;
     font-weight: 300;
     line-height: 1.2;
     text-align: left;
@@ -336,7 +336,7 @@ footer {
 #sobre-mi-curriculum p {
     font-family: 'Alegreya Italic', serif;
     color: rgb(220, 191, 168);
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     line-height: 1.7;
     text-align: left;
     opacity: 0.9;
@@ -396,4 +396,307 @@ footer {
     opacity: 0.8;
     line-height: 1.6;
     margin: 0;
+}
+
+/* ---- PROYECTOS ---- */
+#hero-proyectos {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: calc(100vh - 82px);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-gif {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-width: none;
+}
+
+.hero-proyectos-texto {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    color: rgb(220, 191, 168);
+}
+
+.hero-proyectos-texto p {
+    font-family: 'Lexend', sans-serif;
+    font-size: 0.85rem;
+    letter-spacing: 0.3em;
+    color: rgb(220, 191, 168);
+    background-color: rgba(80, 108, 97, 0.6);
+    padding: 10px 24px;
+}
+
+.flecha {
+    font-size: 1.5rem;
+    color: rgb(220, 191, 168);
+    animation: bajar 1.2s ease-in-out infinite;
+}
+
+@keyframes bajar {
+    0%, 100% { transform: translateY(0); }
+    50%       { transform: translateY(8px); }
+}
+
+/* GALERÍA */
+#galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 300px;
+    gap: 6px;
+    padding: 6px;
+    background-color: rgb(220, 191, 168);
+    max-width: 100%;
+}
+
+#galeria img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    cursor: pointer;
+    max-width: none;
+    transition: opacity 0.2s;
+}
+
+#galeria img:hover {
+    opacity: 0.85;
+}
+
+/* imagen grande que ocupa dos filas */
+#galeria img:nth-child(3) {
+    grid-row: span 2;
+}
+
+/* LIGHTBOX */
+#lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+}
+
+#lightbox.activo {
+    display: flex;
+}
+
+#lightbox-img {
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+    max-width: none;
+}
+
+#lightbox-cerrar {
+    position: absolute;
+    top: 24px;
+    right: 32px;
+    background: none;
+    border: none;
+    color: rgb(220, 191, 168);
+    font-size: 2rem;
+    cursor: pointer;
+    line-height: 1;
+}
+
+/* ---- CONTACTO ---- */
+#hero-contacto {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: calc(100vh - 82px);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.hero-contacto-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    max-width: none;
+}
+
+#hero-contacto p {
+    position: relative;
+    z-index: 2;
+    font-family: 'Lexend', sans-serif;
+    font-size: 0.85rem;
+    letter-spacing: 0.3em;
+    color: rgb(220, 191, 168);
+    background-color: rgba(80, 108, 97, 0.6);
+    padding: 10px 24px;
+}
+
+#hero-contacto .flecha {
+    position: relative;
+    z-index: 2;
+}
+
+#formulario {
+    background-color: rgb(80, 108, 97);
+    padding: 60px;
+    max-width: 100%;
+}
+
+#formulario h2 {
+    font-family: 'Lexend', sans-serif;
+    color: rgb(220, 191, 168);
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin: 0;
+}
+
+#datos-personales {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+#areas-y-detalles {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+#formulario label {
+    font-family: 'Lexend', sans-serif;
+    color: rgb(220, 191, 168);
+    font-size: 0.9rem;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin: 0;
+}
+
+#formulario input[type="text"],
+#formulario input[type="email"],
+#formulario input[type="tel"],
+#formulario textarea {
+    width: 100%;
+    background: transparent;
+    border: 1px solid rgba(220, 191, 168, 0.5);
+    color: rgb(220, 191, 168);
+    font-family: 'Alegreya Italic', serif;
+    font-size: 0.95rem;
+    padding: 10px 14px;
+    outline: none;
+    transition: border-color 0.2s;
+    margin: 0;
+    max-width: none;
+    font-weight: normal;
+}
+
+#formulario input::placeholder,
+#formulario textarea::placeholder {
+    color: rgba(220, 191, 168, 0.5);
+}
+
+#formulario input:focus,
+#formulario textarea:focus {
+    border-color: rgb(220, 191, 168);
+}
+
+#formulario textarea {
+    resize: vertical;
+    min-height: 140px;
+}
+
+#areas {
+    border: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+#areas legend {
+    font-family: 'Lexend', sans-serif;
+    color: rgb(220, 191, 168);
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+#areas label {
+    font-family: 'Alegreya Reg', serif;
+    font-size: 0.95rem;
+    font-weight: normal;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+#areas input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    accent-color: rgb(220, 191, 168);
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+menu {
+    grid-column: 1 / -1;
+    display: flex;
+    gap: 16px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+menu button {
+    font-family: 'Lexend', sans-serif;
+    font-size: 0.85rem;
+    letter-spacing: 0.08em;
+    padding: 10px 28px;
+    border: 1px solid rgba(220, 191, 168, 0.6);
+    background: transparent;
+    color: rgb(220, 191, 168);
+    cursor: pointer;
+    transition: background 0.2s, border-color 0.2s;
+}
+
+menu button:hover {
+    background: rgba(220, 191, 168, 0.15);
+    border-color: rgb(220, 191, 168);
 }
