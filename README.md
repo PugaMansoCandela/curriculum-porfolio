@@ -7,7 +7,7 @@ Portfolio Web - Candela Puga Manso
 ---
 
 ## Estructura de archivos:
-
+```
 portfolio/
 ├── index.html          → Página de entrada (portada)
 ├── inicio.html         → Página principal con carrusel
@@ -18,7 +18,7 @@ portfolio/
 ├── script.js           → Carrusel e interacciones JS
 ├── img/                → Imágenes y GIFs
 └── fuentes/            → Tipografías variables locales
-
+```
 ---
 
 ## Páginas (html):
