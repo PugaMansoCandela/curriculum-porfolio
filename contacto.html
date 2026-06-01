@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Contacto — Candela Puga Manso</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" href="img/logo_cande_puga_manso.png">
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <img src="img/logo_cande_puga_manso_trama.png" alt="Logo de Candela Puga Manso" />
+            <span>CANDE PUGA MANSO</span>
+        </a>
+        <nav>
+            <a href="inicio.html">INICIO</a>
+            <a href="curriculum.html">CURRICULUM</a>
+            <a href="proyectos.html">PROYECTOS</a>
+            <a href="contacto.html">CONTACTO</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="hero-contacto">
+            <img src="img/textura_y_nombre.png" alt="Contacto" class="hero-contacto-img" />
+            <p>CONTACTO</p>
+            <span class="flecha">↓</span>
+        </section>
+
+        <section id="formulario">
+            <h2>¿QUÉ TENÉS EN MENTE?</h2>
+
+            <form>
+                <fieldset id="datos-personales">
+                    <label for="nombre">Nombre:
+                        <input type="text" id="nombre" name="nombre" placeholder="Nombre y apellido" />
+                    </label>
+                    <label for="email">E-Mail:
+                        <input type="email" id="email" name="email" placeholder="tumail@gmail.com" />
+                    </label>
+                    <label for="telefono">Teléfono:
+                        <input type="tel" id="telefono" name="telefono" placeholder="+000 (00) 00000000" />
+                    </label>
+                </fieldset>
+
+                <fieldset id="areas-y-detalles">
+                    <fieldset id="areas">
+                        <legend>Áreas de trabajo:</legend>
+                        <label><input type="checkbox" name="area" value="editorial"> Diseño editorial</label>
+                        <label><input type="checkbox" name="area" value="afiches"> Diseño de afiches</label>
+                        <label><input type="checkbox" name="area" value="identidad"> Diseño identitario</label>
+                        <label><input type="checkbox" name="area" value="fotografia"> Fotografía</label>
+                        <label><input type="checkbox" name="area" value="senaletica"> Diseño de señalética</label>
+                        <label><input type="checkbox" name="area" value="otro"> Otro</label>
+                    </fieldset>
+
+                    <label for="detalles">Detalles del proyecto:
+                        <textarea id="detalles" name="detalles" rows="6"></textarea>
+                    </label>
+                </fieldset>
+
+                <menu>
+                    <li><button type="reset">Borrar</button></li>
+                    <li><button type="submit">Enviar</button></li>
+                </menu>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <section class="footer-bio">
+            <img src="img/logo_cande_puga_manso_trama.png" alt="Logo" />
+            <strong>CANDE<br>PUGA MANSO</strong>
+            <p>Diseñadora de Comunicación Visual</p>
+            <a href="https://www.instagram.com/yo.brillito/" target="_blank" rel="noopener">Instagram</a>
+            <a href="https://www.behance.net/candepm" target="_blank" rel="noopener">Behance</a>
+        </section>
+        <section class="footer-cta">
+            <p class="footer-cta-texto">¿TENÉS ALGÚN <strong>PROYECTO</strong> EN MENTE?</p>
+            <p class="footer-cta-sub">Contactame y lo hacemos :)</p>
+        </section>
+    </footer>
+
+</body>
+
+</html>
